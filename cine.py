@@ -17,13 +17,13 @@ class Cine:
 
     def reservar(self):
 
-        self.mostrar_peliculas()
-
         try:
+            self.mostrar_peliculas()
+
             opcion = int(input("Seleccione una película: ")) - 1
 
             if opcion < 0 or opcion >= len(self.peliculas):
-                print("\n Error: Película inexistente")
+                print("\nPelícula inválida")
                 return
 
             pelicula = self.peliculas[opcion]
@@ -31,27 +31,25 @@ class Cine:
             cantidad = int(input("Cantidad de entradas: "))
 
             if cantidad <= 0:
-                print("\n Error: cantidad inválida")
+                print("\n Error: debe comprar al menos 1 entrada")
                 return
 
             if cantidad > pelicula.lugares_disponibles():
-                print("\n Error: entradas agotadas")
+                print("\n Entradas agotadas")
                 return
 
-            if not pelicula.vender(cantidad):
-                print("\n No se pudo realizar la venta")
-                return
+            pelicula.vender(cantidad)
 
             print("\nSeleccione el medio de pago")
-            print("1 - Efectivo (5%)")
-            print("2 - Débito (10%)")
-            print("3 - Crédito (15%)")
-            print("4 - Mercado Pago (20%)")
+            print("1 - Efectivo (20%)")
+            print("2 - Débito (15%)")
+            print("3 - Crédito (10%)")
+            print("4 - Mercado Pago (5%)")
 
             medio = int(input("Opción: "))
 
             if medio not in [1, 2, 3, 4]:
-                print("\n Error: medio de pago inválido")
+                print("\n Medio de pago inválido")
                 return
 
             reserva = Reserva(pelicula, cantidad, medio)
@@ -59,21 +57,22 @@ class Cine:
             total = reserva.calcular_total()
             asientos = reserva.generar_asientos()
 
-            print("\n===== RESUMEN =====")
+            # 💰 ACUMULAMOS RECAUDACIÓN REAL
+            pelicula.recaudacion += total
+
+            print("\n===== RESUMEN DE COMPRA =====")
             print(f"Película: {pelicula.nombre}")
             print(f"Asientos: {asientos}")
             print(f"Total a pagar: ${total:,.2f}")
 
         except ValueError:
-            print("\n Error: Debe ingresar números válidos")
+            print("\n Error: debe ingresar números válidos")
 
     def total_ventas_funcion(self):
 
         print("\n===== VENTAS POR FUNCIÓN =====\n")
 
         for p in self.peliculas:
-            total = p.entradas_vendidas * p.precio
-
             print(f"{p.nombre} - {p.horario}")
-            print(f"Vendidas: {p.entradas_vendidas}")
-            print(f"Recaudación: ${total:,.2f}\n")
+            print(f"Entradas vendidas: {p.entradas_vendidas}")
+            print(f"Recaudación real: ${p.recaudacion:,.2f}\n")
