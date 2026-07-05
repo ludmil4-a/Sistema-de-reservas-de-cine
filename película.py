@@ -4,3 +4,12 @@ class Pelicula:
         self.horario = horario
         self.capacidad = capacidad
         self.entradas_vendidas = 0
+
+    def lugares_disponibles(self):
+        return self.capacidad - self.entradas_vendidas
+
+    def vender(self, cantidad):
+        if cantidad <= self.lugares_disponibles():
+            self.entradas_vendidas += cantidad
+            return True
+        return False
