@@ -17,19 +17,19 @@ class Reserva:
 
         elif self.medio_pago == 2:
             self.descuento = 0.15
-            self.medio = "Tarjeta de Débito (15%)"
+            self.medio = "Débito (15%)"
 
         elif self.medio_pago == 3:
             self.descuento = 0.10
-            self.medio = "Tarjeta de Crédito (10%)"
+            self.medio = "Crédito (10%)"
 
         elif self.medio_pago == 4:
             self.descuento = 0.05
             self.medio = "Mercado Pago (5%)"
 
         else:
-            descuento = 0
-            medio = "Sin descuento"
+            self.descuento = 0
+            self.medio = "Sin descuento"
 
         total = subtotal - (subtotal * self.descuento)
 
