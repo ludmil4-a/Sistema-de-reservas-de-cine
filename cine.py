@@ -57,7 +57,7 @@ class Cine:
             total = reserva.calcular_total()
             asientos = reserva.generar_asientos()
 
-            # 💰 ACUMULAMOS RECAUDACIÓN REAL
+        
             pelicula.recaudacion += total
 
             print("\n===== RESUMEN DE COMPRA =====")
