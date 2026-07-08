@@ -1,5 +1,4 @@
-# Sistema-de-reservas-de-cine
-Trabajo Final Integrador - Laboratorio de Python 
+# Trabajo Final Integrador - Laboratorio de Python 
 
 
 # Integrantes del grupo D32:
