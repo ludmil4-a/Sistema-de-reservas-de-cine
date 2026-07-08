@@ -16,7 +16,7 @@
 
 ## Escenario:
 
-  Sistema de reservas de cine
+  Sistema de reservas de cine: <br><br>
     El sistema deberá administrar reservas de entradas para funciones de cine. Podrá contemplar selección de películas, horarios disponibles, cantidad de entradas, control de capacidad de salas, promociones y cálculo de importes.
     La solución podrá incorporar estadísticas básicas relacionadas con películas más elegidas, horarios con mayor demanda o cantidad total de entradas vendidas.
 
