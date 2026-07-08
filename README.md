@@ -34,7 +34,7 @@
 
   * "vender(self, cantidad)" : Verifica si hay cupos suficientes; si es así, actualiza las entradas vendidas y retorna True, de lo contrario retorna False.
   
-//
+<br><br>
 
   reserva.py
   
@@ -45,7 +45,7 @@
   * "generar_asientos(self)" : Genera una lista con los números de asiento asignados basándose en las ventas previas.
   
 
-####
+<br><br>
 
   estadísticas.py
   
@@ -56,14 +56,14 @@
   * "total_entradas(peliculas)" : Calcula la suma total de entradas vendidas considerando todas las funciones.
   
 
-####
+<br><br>
 
   datos.py
   
   * "Archivo de configuración que contiene la lista inicial de objetos Pelicula que componen la cartelera".
   
 
-  ####
+ <br><br>
 
   Cine.py
   
@@ -72,9 +72,8 @@
   * "reservar(self)" : Gestiona el flujo de selección de película, cantidad, pago y confirmación de compra.
 
   * "total_ventas_funcion(self)" : Muestra un resumen de ventas y recaudación real por cada película.
-  
 
-  ####
+ <br><br>
 
   main.py
   
