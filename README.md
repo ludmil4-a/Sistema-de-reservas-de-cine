@@ -27,8 +27,8 @@
 ## Instrucciones de ejecución:
 
   pelicula.py
-  [
-  "__init__(self, nombre, horario, precio, capacidad)" : Constructor que inicializa los atributos básicos y los contadores de ventas y recaudación.
+  
+  * "__init__(self, nombre, horario, precio, capacidad)" : Constructor que inicializa los atributos básicos y los contadores de ventas y recaudación.
 
   "lugares_disponibles(self)" : Calcula el espacio restante restando las entradas vendidas a la capacidad total de la sala.  
 
