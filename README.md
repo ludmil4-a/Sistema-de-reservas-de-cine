@@ -30,57 +30,57 @@
   
   * "__init__(self, nombre, horario, precio, capacidad)" : Constructor que inicializa los atributos básicos y los contadores de ventas y recaudación.
 
-  "lugares_disponibles(self)" : Calcula el espacio restante restando las entradas vendidas a la capacidad total de la sala.  
+  * "lugares_disponibles(self)" : Calcula el espacio restante restando las entradas vendidas a la capacidad total de la sala.  
 
-  "vender(self, cantidad)" : Verifica si hay cupos suficientes; si es así, actualiza las entradas vendidas y retorna True, de lo contrario retorna False.
-  ]
+  * "vender(self, cantidad)" : Verifica si hay cupos suficientes; si es así, actualiza las entradas vendidas y retorna True, de lo contrario retorna False.
+  
 
 ####
 
   reserva.py
-  [
-  "__init__(self, pelicula, cantidad, medio_pago)" : Inicializa la reserva vinculándola a una película específica, la cantidad y el medio de pago seleccionado.  
+  
+  * "__init__(self, pelicula, cantidad, medio_pago)" : Inicializa la reserva vinculándola a una película específica, la cantidad y el medio de pago seleccionado.  
 
-  "calcular_total(self)" : Aplica el descuento correspondiente según el medio de pago (1: 20%, 2: 15%, 3: 10%, 4: 5%) y calcula el importe final.
+  * "calcular_total(self)" : Aplica el descuento correspondiente según el medio de pago (1: 20%, 2: 15%, 3: 10%, 4: 5%) y calcula el importe final.
 
-  "generar_asientos(self)" : Genera una lista con los números de asiento asignados basándose en las ventas previas.
-  ]
+  * "generar_asientos(self)" : Genera una lista con los números de asiento asignados basándose en las ventas previas.
+  
 
 ####
 
   estadísticas.py
-  [
-  "pelicula_mas_vista(peliculas)" : Retorna el objeto Pelicula con la mayor cantidad de entradas vendidas.
+  
+  * "pelicula_mas_vista(peliculas)" : Retorna el objeto Pelicula con la mayor cantidad de entradas vendidas.
 
-  "horario_mas_demandado(peliculas)" : Devuelve el horario de la función que tiene más entradas vendidas.
+  * "horario_mas_demandado(peliculas)" : Devuelve el horario de la función que tiene más entradas vendidas.
 
-  "total_entradas(peliculas)" : Calcula la suma total de entradas vendidas considerando todas las funciones.
-  ]
+  * "total_entradas(peliculas)" : Calcula la suma total de entradas vendidas considerando todas las funciones.
+  
 
 ####
 
   datos.py
-  [
-  "Archivo de configuración que contiene la lista inicial de objetos Pelicula que componen la cartelera".
-  ]
+  
+  * "Archivo de configuración que contiene la lista inicial de objetos Pelicula que componen la cartelera".
+  
 
   ####
 
   Cine.py
-  [
-  "mostrar_peliculas(self)" : Imprime en consola la cartelera actual con disponibilidad de salas.
+  
+  * "mostrar_peliculas(self)" : Imprime en consola la cartelera actual con disponibilidad de salas.
 
-  "reservar(self)" : Gestiona el flujo de selección de película, cantidad, pago y confirmación de compra.
+  * "reservar(self)" : Gestiona el flujo de selección de película, cantidad, pago y confirmación de compra.
 
-  "total_ventas_funcion(self)" : Muestra un resumen de ventas y recaudación real por cada película.
-  ]
+  * "total_ventas_funcion(self)" : Muestra un resumen de ventas y recaudación real por cada película.
+  
 
   ####
 
   main.py
-  [
-  "Punto de entrada de la aplicación. Ejecuta el bucle principal (while True) que muestra el menú al usuario y llama a los métodos de la clase Cine".
-  ]
+  
+  * "Punto de entrada de la aplicación. Ejecuta el bucle principal (while True) que muestra el menú al usuario y llama a los métodos de la clase Cine".
+  
   
 
 ## Link del vídeo explicativo:
