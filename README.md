@@ -2,16 +2,16 @@
 Trabajo Final Integrador - Laboratorio de Python 
 
 
-Integrantes del grupo D32:
+# Integrantes del grupo D32:
   -Ludmila Selene Gómez Feldmann.
   -Lionel Asdrubal Gonzalez.
   -Priscila Jaquelin Vallejos.
 
 
-Comisión:   K1.4.
+# Comisión:   K1.4.
 
 
-Escenario:
+# Escenario:
   Sistema de reservas de cine
     El sistema deberá administrar reservas de entradas para funciones de cine. Podrá contemplar selección de películas, horarios disponibles, cantidad de entradas, control de capacidad de salas, promociones y cálculo de importes.
     La solución podrá incorporar estadísticas básicas relacionadas con películas más elegidas, horarios con mayor demanda o cantidad total de entradas vendidas.
