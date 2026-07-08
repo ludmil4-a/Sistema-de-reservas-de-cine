@@ -24,7 +24,7 @@
 
 ## Descripción del sistema:
 
-  El algoritmo diseñado ayuda en la administración de ventas de entradas para funciones del cine. Por pantalla, le muestra al usuario la selección de películas disponibles del día, indicando el horario de proyección; el precio de cada entrada y la disponibilidad de los asientos por sala. En términos de pago, le ofrece distintas opciones, cada una cuenta con un descuento determinado. 
+  El algoritmo diseñado ayuda en la administración de ventas de entradas para funciones del cine. Por pantalla, le muestra al usuario la selección de películas disponibles del día, indicando el horario de proyección; el precio de cada entrada y la disponibilidad de los asientos por sala. En términos de pago, le ofrece distintas opciones, cada una cuenta con un descuento determinado. <br><br>
   Por otro lado, a la administración, le brinda la siguiente información: la cantidad de venta de entradas por películas, el horario pico de asistencia del público, las ganancias totales recaudadas y la película con más elegida. 
 
 <br><br>
