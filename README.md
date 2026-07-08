@@ -3,9 +3,9 @@
 
 ## Integrantes del grupo D32:
 
-  -Gómez Feldmann Ludmila Selene.
-  -Gonzalez Lionel Asdrubal.
-  -Vallejos Priscila Jaquelin.
+  * Gómez Feldmann Ludmila Selene.
+  * Gonzalez Lionel Asdrubal.
+  * Vallejos Priscila Jaquelin.
 
 
 ## Comisión:   K1.4.
@@ -34,8 +34,7 @@
 
   * "vender(self, cantidad)" : Verifica si hay cupos suficientes; si es así, actualiza las entradas vendidas y retorna True, de lo contrario retorna False.
   
-
-####
+/
 
   reserva.py
   
