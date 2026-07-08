@@ -2,9 +2,9 @@
 
 
 # Integrantes del grupo D32:
-  -Ludmila Selene Gómez Feldmann.
-  -Lionel Asdrubal Gonzalez.
-  -Priscila Jaquelin Vallejos.
+  -Gómez Feldmann Ludmila Selene.
+  -Gonzalez Lionel Asdrubal.
+  -Vallejos Priscila Jaquelin.
 
 
 # Comisión:   K1.4.
