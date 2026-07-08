@@ -34,7 +34,7 @@
 
   * "vender(self, cantidad)" : Verifica si hay cupos suficientes; si es así, actualiza las entradas vendidas y retorna True, de lo contrario retorna False.
   
-/
+//
 
   reserva.py
   
